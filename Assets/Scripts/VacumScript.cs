@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightSwitch : MonoBehaviour
+
+
+public class VacumScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject ObjectToActive;
+
     void Start()
     {
+        ObjectToActive.GetComponent<Animator>().enabled = false;
         
     }
 
